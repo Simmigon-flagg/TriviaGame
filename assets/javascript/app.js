@@ -90,29 +90,42 @@ var stopwatch = {
       $("#buttons").css("display", "block");
       $("#clock").css("display", "block");
       $("#game").css("display", "block");
+      $("#forms").css("display", "block");
 
-      // for(var i = 0; i < TriviaGame.questions.question; i++){
-
-      // }
       questions = TriviaGame.questions;
       for (var i = 0; i < questions.length; i++) {
-        console.log("Question : "+ (i + 1) +" "+ questions[i].question);
+        console.log("Question : " + (i + 1) + " " + questions[i].question);
         var a = $("<div>");
         a.addClass("question-class");
         a.attr("data-name", i + 1);
         a.text("Question " + (i + 1) + ": " + questions[i].question);
         choose = questions[i].choices;
+        $("#game").append(a);
+
+        var form = $("<form>");
+
+        form.attr("data-group", i + 1);
+
+        $("#game").append(form);
 
         for (var j = 0; j < choose.length; j++) {
+
+          var input = $('<input>');
+          input.addClass("question");
+          input.attr("Type", 'radio');
+          $("#game").append(input);
+
+          var label = $('<label>');
+          // label.addClass("question");
+          // label.attr("data-name", i + 1);
+          label.text(choose[j]);
+          $("#game").append(label);
+
           console.log("Choices: " + (j + 1) + " " + choose[j])
+
         }
-        //Show on game Id div
-        $("#game").append(a)
         console.log("Answer: " + questions[i].answer);
       }
-
-
-
     }
   },
   stop: function () {
@@ -134,6 +147,8 @@ var stopwatch = {
       $("#clock").css("display", "none");
       $("#end-of-game").css("display", "block");
       $("#game").css("display", "none");
+      $("#forms").css("display", "none");
+
 
 
     }
