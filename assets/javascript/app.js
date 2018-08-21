@@ -42,46 +42,46 @@ window.onload = function () {
 
 var TriviaGame = {
   questions: [
-    // {
-    //   question: "How do crickets hear?",
-    //   choices: ["Through their wings", "Through their belly", "Through their knees ", "Through their tongue"],
-    //   answer: "Through their knees"
-    // },
-    // {
-    //   question: "Which American city invented plastic vomit?",
-    //   choices: ["Chicago", "Detroit", "Columbus", "Baltimore"],
-    //   answer: "Chicago"
-    // },
-    // {
-    //   question: "In ‘Ben Hur’, which modern thing can be seen during the chariot scene?",
-    //   choices: ["A waitress", "A car", "A postbox", "A street lamp"],
-    //   answer: "A car"
-    // },
-    // {
-    //   question: "What was Karl Marx’s favorite color?",
-    //   choices: ["Brown", "Blue", "Red", "Purple"],
-    //   answer: "Red"
-    // },
-    // {
-    //   question: "What’s the best way to stop crying while peeling onions?",
-    //   choices: ["Lick almonds", "Suck lemons", "Eat cheese", "Chew gum"],
-    //   answer: "Chew gum"
-    // },
-    // {
-    //   question: "How old was the youngest Pope?",
-    //   choices: ["11", "17", "22", "29"],
-    //   answer: "11"
-    // },
-    // {
-    //   question: "Which animal sleeps for only five minutes a day?",
-    //   choices: ["A chameleon", "A koala", "A giraffe", "A beaver"],
-    //   answer: "A giraffe"
-    // },
-    // {
-    //   question: "How many words in the English language end in “dous”?",
-    //   choices: ["Two", "Four", "Six", "Eight"],
-    //   answer: "Four"
-    // },
+    {
+      question: "How do crickets hear?",
+      choices: ["Through their wings", "Through their belly", "Through their knees ", "Through their tongue"],
+      answer: "Through their knees"
+    },
+    {
+      question: "Which American city invented plastic vomit?",
+      choices: ["Chicago", "Detroit", "Columbus", "Baltimore"],
+      answer: "Chicago"
+    },
+    {
+      question: "In ‘Ben Hur’, which modern thing can be seen during the chariot scene?",
+      choices: ["A waitress", "A car", "A postbox", "A street lamp"],
+      answer: "A car"
+    },
+    {
+      question: "What was Karl Marx’s favorite color?",
+      choices: ["Brown", "Blue", "Red", "Purple"],
+      answer: "Red"
+    },
+    {
+      question: "What’s the best way to stop crying while peeling onions?",
+      choices: ["Lick almonds", "Suck lemons", "Eat cheese", "Chew gum"],
+      answer: "Chew gum"
+    },
+    {
+      question: "How old was the youngest Pope?",
+      choices: ["11", "17", "22", "29"],
+      answer: "11"
+    },
+    {
+      question: "Which animal sleeps for only five minutes a day?",
+      choices: ["A chameleon", "A koala", "A giraffe", "A beaver"],
+      answer: "A giraffe"
+    },
+    {
+      question: "How many words in the English language end in “dous”?",
+      choices: ["Two", "Four", "Six", "Eight"],
+      answer: "Four"
+    },
     {
       question: "One human hair can support how many kilograms?",
       choices: ["Three", "Five", "Seven", "Nine"],
@@ -103,7 +103,7 @@ var clockRunning = false;
 // Our stopwatch object
 var stopwatch = {
 
-  time: 2,
+  time: 30,
   lap: 1,
 
   reset: function () {
